@@ -4,7 +4,7 @@ import ThemeToggle from "./components/ThemeToggle";
 import NotesSidebar from "./components/NotesSidebar";
 import NoteEditor from "./components/NoteEditor";
 import SignInPage from "./pages/SignInPage";
-import AuthButton from "./components/Authbutton";
+import AuthButton from "./components/Authbutton.jsx";
 
 export default function App() {
   const [notes, setNotes] = useState([]);
@@ -48,8 +48,8 @@ export default function App() {
       prev.map((note) =>
         note.id === id
           ? { ...note, text, updatedAt: new Date().toISOString() }
-          : note
-      )
+          : note,
+      ),
     );
   };
 
