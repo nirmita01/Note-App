@@ -4,7 +4,7 @@ import ThemeToggle from "./components/ThemeToggle";
 import NotesSidebar from "./components/NotesSidebar";
 import NoteEditor from "./components/NoteEditor";
 import SignInPage from "./pages/SignInPage";
-import AuthButton from "./components/Authbutton.jsx";
+import AuthButton from "./components/Authbutton";
 
 export default function App() {
   const [notes, setNotes] = useState([]);

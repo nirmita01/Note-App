@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AuthButton from "../components/Authbutton.jsx";
+import AuthButton from "../components/Authbutton";
 
 export default function SignInPage({ onSignIn, darkMode }) {
   const [email, setEmail] = useState("");
